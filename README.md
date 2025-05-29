@@ -1,7 +1,7 @@
 <h1>Introduction</h1>
 This project revolves around the use of the ESP-WROOM-32 touch modules within the pins of the microcontroller. The main purpose is to be able to use the touch sensors to detect specifically where (which pin) the detection occurred in and to increment the detection count from the EEPROM. This was done in the Arduino IDE in the language of C++. Ensure that the board can communicate with the Host on COM(1-5) in Serial Communication. Respective drivers for the communication may be needed.
 <h2>Required Libraries</h2>
-- esp32 by expressif (Board Library)
+- esp32 by expressif (Board Library) <br>
 - ArduinoJson by Benoit Blanchon
 <h2>Code Disection</h2>
 The code serves as foundational information to test the functionality of the touch module found within the pins of ESP32. To start off, we included the Arduino and EEPROM header files and defined the pins (2,4,13) to be the inputs of our program. An integer value (30) served as the threshold value for when a touch is detected by the pin, otherwise, bogus values with be given and attempted to be handled by the program which can lead to issues.
